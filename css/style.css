@@ -1,0 +1,448 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+img {
+    vertical-align: middle;
+}
+
+
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+article a{
+  color:#c34f4b;
+  text-decoration:none;
+}
+article a:hover{
+  color:#666;
+
+}
+
+.header-container {
+    border-bottom: 20px solid #c34f4b;
+}
+
+.footer-container {
+    border-top: 20px solid #c34f4b;
+}
+
+.header-container,
+.footer-container{
+    background: #f4645f;
+}
+
+.title {
+    color: white;
+}
+
+.back{
+    float: left;
+    margin: 10px 5px;
+    padding: 10px;
+    clear: both;
+    color:#333;  
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+nav a.current{
+  background: #c34f4b;
+}
+
+nav a:hover,
+nav a:visited {
+    background: #c34f4b;
+    color:white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 30px 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+.main aside {
+    color: white;
+    padding: 0px 5% 10px;
+}
+
+.footer-container footer {
+    color: white;
+    padding: 20px 0;
+}
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+    nav a {
+        float: left;
+        width: 27%;
+        margin: 0 1.7%;
+        padding: 25px 2%;
+        margin-bottom: 0;
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+    .header-container,
+    .main aside {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+    .title {
+        float: left;
+    }
+
+    nav {
+        float: right;
+        width: 38%;
+    }
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main article {
+        float: left;
+        width: 57%;
+    }
+
+    .main aside {
+        float: right;
+        width: 28%;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/**********************/
+/*HERE IS THE NEW CSS*/
+/* ----- Nav bar and hero background css -----*/
+.container {
+  display: none;
+  cursor: pointer;
+  z-index: 1;
+  position: absolute;
+}
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 8px 8px;
+  transition: 0.4s;
+}
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+nav#navbar {
+  width: 100%;
+  height: 50px;
+  background: #232d4b;
+  text-align: center;
+}
+nav div {
+  color: #d2d2d2;
+  display: inline-block;
+  padding: 16px;
+  font-family: "Franklin Gothic Medium", "Franklin Gothic", "Arial";
+  font-size: 15px;
+  font-weight: 300;
+}
+h1.hero_text {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  color: #ffffff;
+  font-size: 54px;
+  z-index: 1;
+  font-family: "Franklin Gothic Medium", "Franklin Gothic", "Arial";
+  text-align: center;
+  margin-top: 24px;
+}
+div.hero_background {
+  background: #e57200;
+  padding: 0px;
+}
+.hero_background img {
+  width: 100%;
+  opacity: .6;
+}
+@media screen and (max-width:500px) {
+  h1.hero_text {
+    font-size: 30px;
+    position: static;
+    display: block;
+    color: #e57200;
+    left: auto;
+    right: auto;
+    text-align: center;
+  }
+  nav#navbar {
+    height: 50px;
+  }
+  nav div {
+    display: none;
+    height: 14px;
+  }
+  .container {
+    display: inline;
+    z-index: 6;
+    right: 8px;
+  }
+  
+ nav div.bar1, nav div.bar2, nav div.bar3 {
+  z-index: 7;
+  display: inline;
+  }
+}
+/* ----- Home page css -----*/
+h2#headingSchedule {
+  color: #e57200;
+  font-size: 36px;
+  font-family: "Franklin Gothic Medium", "Franklin Gothic", "Arial";
+  text-align: center;
+  margin-top: 65px;
+    margin-bottom: 26px;
+    display:inline-block;
+    width:100%;
+}
+h2#headingWant {
+  color: #e57200;
+  font-size: 36px;
+  font-family: "Franklin Gothic Medium", "Franklin Gothic", "Arial";
+  text-align: center;
+  margin-top: 15px;
+    margin-bottom: 22px;
+    width:100%;
+}
+button#started, button#revise {
+  background: #e57200;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  font-family: "Franklin Gothic Medium", "Franklin Gothic", "Arial";
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  min-width: 210px;
+  border: none;
+  margin-right: 16px;
+}
+button#started {
+      margin:0;
+        margin-right:20px;
+    
+}
+button#revise {
+      margin:0;
+}
+div.buttons {
+  text-align: center;
+    padding:0;
+    margin-left:5%;
+    margin-right:5%;
+    margin-top: 40px;
+}
+#started ~ p#overlayForMe, #revise ~ p#overlayMyself {
+  display:none;
+}
+#started:hover ~ p#overlayForMe, #revise:hover ~ p#overlayMyself {
+  display:block;
+    font-size: 20px;
+    padding-top:16px;
+    position:absolute;
+    left:0;
+    right:0;
+    margin:auto;
+}
+.hide {
+    display:none;
+}
+table#tableHP {
+  width: 100%;
+  height: 1000px;
+}
+table#tableHP td {
+  border-bottom: 1px solid #979797;
+}
+table#tableHP td.hour {
+  border-right: 1px solid #979797;
+}
+h3#hForMyself, h3#hForMe {
+   display:none;
+   font-size:18px;
+   color:#e57200;
+}
+@media screen and (max-width:500px) {
+  button#started {
+    margin-right:0;
+  }
+  button#revise {
+    margin-top:16px;
+  }
+  h2#headingWant {
+    font-size: 27px;
+  }
+  button#started, button#revise {
+    font-size: 16px;
+  }
+  div.buttons {
+    left:0;
+    right:0;
+    margin-left:0;
+    margin-right:0;
+    min-width: 200px;
+  } 
+  #started ~ p#overlayForMe, #revise ~ p#overlayMyself {
+    display:block;
+  }
+  h3#hForMyself, h3#hForMe {
+   display:block;
+   font-size:18px;
+   color:#e57200;
+   margin-top:32px;
+   margin-bottom:32px;
+}
+    h2#headingSchedule {
+        font-size: 27px;
+        margin-top: 22px;
+    }
+}
