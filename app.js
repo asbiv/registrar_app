@@ -20,15 +20,19 @@
 			});
 		});
 		
+		//OLD SECTION, example from download
+		/*
 		this.get('#/about/', function(context) {
 				var str=location.href.toLowerCase();
 				context.app.swap('');
 				context.render('templates/about.template', {})
 							 .appendTo(context.$element());
 		});
+		*/
 
 		//HERE IS THE NEW SECTION
 		this.get('#/registrar/', function(context) {
+				var str=location.href.toLowerCase();
 				context.app.swap('');
 				context.render('templates/registrar.template', {})
 							 .appendTo(context.$element());
@@ -51,7 +55,7 @@
 	});
 
 	$(function() {
-		app.run('#/about/');
+		app.run('#/registrar/');
 	});
 
 })(jQuery);
