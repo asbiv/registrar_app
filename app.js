@@ -33,6 +33,11 @@
 				context.render('templates/registrar.template', {})
 							 .appendTo(context.$element());
 		});
+		this.get('#/calendar/', function(context) {
+				context.app.swap('');
+				context.render('templates/calendar.template', {})
+							 .appendTo(context.$element());
+		});
 
 		this.get('#/article/:id', function(context) {
 			this.item = this.items[this.params['id']];
