@@ -1,0 +1,16 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ],
+  "env": {
+  },
+  "formation": {
+  },
+  "name": "registrar_app",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
