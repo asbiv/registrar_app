@@ -6,5 +6,5 @@
 
 
 
-<button id="back" onclick="window.location.href='#/step2/';">previous page</button>
-<button id="next" onclick="window.location.href='#/calendar/';">next page</button>
+<button id="back" class="prevNext" onclick="window.location.href='#/step2-concentrations/';">previous page</button>
+<button id="next" class="prevNext" onclick="window.location.href='#/calendar/';">next page</button>

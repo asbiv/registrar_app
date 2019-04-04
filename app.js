@@ -42,14 +42,14 @@
 				context.render('templates/calendar.template', {})
 							 .appendTo(context.$element());
 		});
-		this.get('#/when/', function(context) {
+		this.get('#/step1-when/', function(context) {
 				context.app.swap('');
-				context.render('templates/when.template', {})
+				context.render('templates/step1-when.template', {})
 							 .appendTo(context.$element());
 		});
-		this.get('#/step2/', function(context) {
+		this.get('#/step2-concentrations/', function(context) {
 				context.app.swap('');
-				context.render('templates/step2.template', {})
+				context.render('templates/step2-concentrations.template', {})
 							 .appendTo(context.$element());
 		});
 		this.get('#/step3/', function(context) {

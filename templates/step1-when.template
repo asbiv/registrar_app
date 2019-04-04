@@ -1,0 +1,51 @@
+<h2 id="class-preferences">When do you want to take classes?</h2>
+<h3>
+  What days would you like to take classes?
+</h3>
+<div id="day-selection">
+    <label class="containerDay">Monday/Tuesday
+        <input type="checkbox" value="Monday/Tuesday">
+        <span class="checkmark"></span>
+    </label>
+    <label class="containerDay">Wednesday/Thursday
+        <input type="checkbox" value="Wednesday/Thursday">
+        <span class="checkmark"></span>
+    </label>
+    <label class="containerDay">No day preference
+        <input type="checkbox" value="No day preference">
+        <span class="checkmark"></span>
+    </label>
+</div>
+
+<h3>
+ What times would you like to take classes?
+</h3>
+<div id="time-selection">
+    <label class="containerDay">8:00-9:25am
+        <input type="checkbox" value="8:00-9:25am">
+        <span class="checkmark"></span>
+    </label>
+    <label class="containerDay">10:00-11:25am
+        <input type="checkbox" value="10:00-11:25am">
+        <span class="checkmark"></span>
+    </label>
+    <label class="containerDay">11:45-1:10pm
+        <input type="checkbox" value="11:45-1:10pm">
+        <span class="checkmark"></span>
+    </label>
+     <label class="containerDay">2:45-4:10pm
+        <input type="checkbox" value="2:45-4:10pm">
+        <span class="checkmark"></span>
+    </label>
+    <label class="containerDay">4:30-5:55pm
+        <input type="checkbox" value="4:30-5:55pm">
+        <span class="checkmark"></span>
+    </label>
+      <label class="containerDay">No time preference
+        <input type="checkbox" value="No time preference">
+        <span class="checkmark"></span>
+    </label>
+</div>
+
+<button id="back" class="prevNext" onclick="window.location.href='#/registrar/';">previous page</button>
+<button id="next" class="prevNext" onclick="window.location.href='#/step2-concentrations/';">next page</button>
