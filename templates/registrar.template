@@ -1,17 +1,22 @@
-<!–– Hero image section -->
+<!-- Hero image section -->
 <h1 class=hero_text>
 	MAKE YOUR SCHEDULE WORK
 </h1>
 <div class=hero_background>
-	<img src="http://www.mbaprepadvantage.com/wp-content/uploads/2014/11/Virginia-Darden.jpg">
+	<img src="/images/darden-copy.jpg">
 </div>
 <h2 id=headingWant>
-	How do you want to make your schedule?
+	Try the course recommendation tool
 </h2>
 <div class=buttons>
-	<button id=started onclick="window.location.href='https://orozcoa19.wpengine.com/?page_id=127';">Make it for me</button><button id="revise" onclick="window.location.href='http://orozcoa19.wpengine.com/?page_id=231';">Make it myself</button>
-	<h3 id=hForMe>Make it for me:</h3>
-	<p id=overlayForMe>Select your preferences and a schedule will be automatically created for you!</p>
+	<button id=started onclick="window.location.href='#/when/';">Get Started</button>
+	<!-- OLD BUTTON and HEADING
+	<button id="revise" onclick="window.location.href='http://orozcoa19.wpengine.com/?page_id=231';">Make it myself</button> 
+	<h3 id=HPRecHeading>Recommendation tool:</h3>
+	-->
+	<p id=HPRecP>Select your preferences and a schedule will be automatically created for you</p>
+	<!-- OLD OVERLAY
 	<h3 id=hForMyself>Make it for myself:</h3>
 	<p id=overlayMyself>Select and research your classes on your own!</p>
+	-->
 </div>

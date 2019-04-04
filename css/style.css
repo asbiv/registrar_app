@@ -1,4 +1,7 @@
 /* ----- Nav bar and hero background css -----*/
+a {
+  text-decoration:none;
+}
 
 #app {
   all: none;
@@ -21,8 +24,8 @@
 
 /* Rotate first bar */
 .change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-  transform: rotate(-45deg) translate(-9px, 6px) ;
+  -webkit-transform: rotate(-45deg) translate(-9px, 9.6px) ;
+  transform: rotate(-45deg) translate(-9px, 9.6px) ;
 }
 
 /* Fade out the second bar */
@@ -35,7 +38,6 @@
   -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
   transform: rotate(45deg) translate(-8px, -8px) ;
 }
-
 
 nav#navbar {
   width: 100%;
@@ -53,16 +55,31 @@ nav div {
   font-weight: 300;
 }
 
+nav div a {
+  color:#d2d2d2;
+}
+
+nav div a:hover {
+  color:#e57200;
+}
+
+#mobileNavbar {
+  display:none;
+}
+
 h1.hero_text {
   position: absolute;
-  left: 5%;
-  right: 5%;
-  color: #ffffff;
-  font-size: 54px;
+  left: 10%;
+  right: 10%;
+  color: #232d4b;
+  font-size: 46px;
   z-index: 1;
   font-family: "Franklin Gothic Medium", "Franklin Gothic", "Arial";
   text-align: center;
   margin-top: 24px;
+  background: rgba(255, 255, 255, 0.5);
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 div.hero_background {
@@ -82,7 +99,7 @@ div.hero_background {
   margin-top: 100px; 
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:700px) {
   h1.hero_text {
     font-size: 30px;
     position: static;
@@ -109,6 +126,22 @@ div.hero_background {
   z-index: 7;
   display: inline;
   }
+
+  .change ~ #mobileNavbar {
+  display:block;
+  }
+
+  .change ~ #mobileNavbar div {
+  display:block;
+  color:#232D4B;
+  padding:1.125rem 1.375rem;
+  border-bottom: 1px solid #979797;
+  }
+
+  nav div a {
+  color:#232D4B;
+}
+
 }
 
 
@@ -153,7 +186,7 @@ button#started, button#revise {
 
 button#started {
       margin:0;
-        margin-right:20px;
+      margin-right:20px;
     
 }
 
@@ -166,7 +199,11 @@ div.buttons {
     padding:0;
     margin-left:5%;
     margin-right:5%;
-    margin-top: 40px;
+    margin-top: 30px;
+}
+
+button:hover {
+  opacity: .6;
 }
 
 #started ~ p#overlayForMe, #revise ~ p#overlayMyself {
@@ -176,28 +213,24 @@ div.buttons {
 #started:hover ~ p#overlayForMe, #revise:hover ~ p#overlayMyself {
   display:block;
     font-size: 20px;
-    padding-top:16px;
+    padding-top:30px;
     position:absolute;
     left:0;
     right:0;
     margin:auto;
+    font-family: "Georgia", "sans-serif";
+    color: #838383;
 }
 
 .hide {
     display:none;
 }
 
-table#tableHP {
-  width: 100%;
-  height: 1000px;
-}
-
-table#tableHP td {
-  border-bottom: 1px solid #979797;
-}
-
-table#tableHP td.hour {
-  border-right: 1px solid #979797;
+p#HPRecP {
+  font-size:18px;
+  font-family: "Georgia", "sans-serif";
+  color: #232d4b;
+  padding-top: 20px;
 }
 
 h3#hForMyself, h3#hForMe {
@@ -206,12 +239,26 @@ h3#hForMyself, h3#hForMe {
    color:#e57200;
 }
 
-@media screen and (max-width:500px) {
+h3#HPRecHeading {
+   display:block;
+   font-size:18px;
+   color:#e57200;
+   margin-top:32px;
+   margin-bottom:32px;
+}
+
+@media screen and (max-width:700px) {
   button#started {
     margin-right:0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   button#revise {
     margin-top:16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   h2#headingWant {
     font-size: 27px;
@@ -240,4 +287,9 @@ h3#hForMyself, h3#hForMe {
         font-size: 27px;
         margin-top: 22px;
     }
+
+  p#HPRecP {
+  font-size:16px;
+}
+
 }

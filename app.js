@@ -42,6 +42,21 @@
 				context.render('templates/calendar.template', {})
 							 .appendTo(context.$element());
 		});
+		this.get('#/when/', function(context) {
+				context.app.swap('');
+				context.render('templates/when.template', {})
+							 .appendTo(context.$element());
+		});
+		this.get('#/step2/', function(context) {
+				context.app.swap('');
+				context.render('templates/step2.template', {})
+							 .appendTo(context.$element());
+		});
+		this.get('#/step3/', function(context) {
+				context.app.swap('');
+				context.render('templates/step3.template', {})
+							 .appendTo(context.$element());
+		});
 
 		this.get('#/article/:id', function(context) {
 			this.item = this.items[this.params['id']];
