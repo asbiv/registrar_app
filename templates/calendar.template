@@ -19,4 +19,4 @@
 
 </script>
 
-<button id="back" class="prevNext" onclick="window.location.href='#/step2-concentrations/';">previous page</button>
+<button id="back-step2" class="prevNext" onclick="window.location.href='#/step2-concentrations/';">previous page</button>

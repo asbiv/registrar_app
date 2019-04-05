@@ -53,5 +53,5 @@
     </label>
 </div>
 
-<button id="back" class="prevNext" onclick="window.location.href='#/step1-when/';">previous page</button>
-<button id="next" class="prevNext" onclick="window.location.href='#/calendar/';">next page</button>
+<button id="back-step1" class="prevNext" onclick="window.location.href='#/step1-when/';">previous page</button>
+<button id="next-calendar" class="prevNext" onclick="window.location.href='#/calendar/';">next page</button>

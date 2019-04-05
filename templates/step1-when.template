@@ -47,5 +47,5 @@
     </label>
 </div>
 
-<button id="back" class="prevNext" onclick="window.location.href='#/registrar/';">previous page</button>
-<button id="next" class="prevNext" onclick="window.location.href='#/step2-concentrations/';">next page</button>
+<button id="back-registrar" class="prevNext" onclick="window.location.href='#/registrar/';">previous page</button>
+<button id="next-step2" class="prevNext" onclick="window.location.href='#/step2-concentrations/';">next page</button>

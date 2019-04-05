@@ -9,7 +9,7 @@
 	Try the course recommendation tool
 </h2>
 <div class=buttons>
-	<button id=started onclick="window.location.href='#/when/';">Get Started</button>
+	<button id=started onclick="window.location.href='#/step1-when/';">Get Started</button>
 	<!-- OLD BUTTON and HEADING
 	<button id="revise" onclick="window.location.href='http://orozcoa19.wpengine.com/?page_id=231';">Make it myself</button> 
 	<h3 id=HPRecHeading>Recommendation tool:</h3>
