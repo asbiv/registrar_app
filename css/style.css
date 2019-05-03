@@ -1,6 +1,7 @@
 /* ----- Nav bar and hero background css -----*/
+
 a {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 #app {
@@ -14,7 +15,9 @@ a {
   position: absolute;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
   width: 35px;
   height: 5px;
   background-color: #ffffff;
@@ -23,20 +26,23 @@ a {
 }
 
 /* Rotate first bar */
+
 .change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 9.6px) ;
-  transform: rotate(-45deg) translate(-9px, 9.6px) ;
+  -webkit-transform: rotate(-45deg) translate(-9px, 9.6px);
+  transform: rotate(-45deg) translate(-9px, 9.6px);
 }
 
 /* Fade out the second bar */
+
 .change .bar2 {
   opacity: 0;
 }
 
 /* Rotate last bar */
+
 .change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-  transform: rotate(45deg) translate(-8px, -8px) ;
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
 
 nav#navbar {
@@ -56,15 +62,15 @@ nav div {
 }
 
 nav div a {
-  color:#d2d2d2;
+  color: #d2d2d2;
 }
 
 nav div a:hover {
-  color:#e57200;
+  color: #e57200;
 }
 
 #mobileNavbar {
-  display:none;
+  display: none;
 }
 
 h1.hero_text {
@@ -96,7 +102,7 @@ div.hero_background {
   background: #232d4b;
   width: 100%;
   height: 50px;
-  margin-top: 100px; 
+  margin-top: 100px;
 }
 
 @media screen and (max-width:700px) {
@@ -121,29 +127,25 @@ div.hero_background {
     z-index: 6;
     right: 8px;
   }
-  
- nav div.bar1, nav div.bar2, nav div.bar3 {
-  z-index: 7;
-  display: inline;
+  nav div.bar1,
+  nav div.bar2,
+  nav div.bar3 {
+    z-index: 7;
+    display: inline;
   }
-
-  .change ~ #mobileNavbar {
-  display:block;
+  .change~#mobileNavbar {
+    display: block;
   }
-
-  .change ~ #mobileNavbar div {
-  display:block;
-  color:#232D4B;
-  padding:1.125rem 1.375rem;
-  border-bottom: 1px solid #979797;
+  .change~#mobileNavbar div {
+    display: block;
+    color: #232D4B;
+    padding: 1.125rem 1.375rem;
+    border-bottom: 1px solid #979797;
   }
-
   nav div a {
-  color:#232D4B;
+    color: #232D4B;
+  }
 }
-
-}
-
 
 /* ----- Home page & Input pages css -----*/
 
@@ -153,9 +155,9 @@ h2#headingSchedule {
   font-family: "Franklin Gothic Medium", "Franklin Gothic", "Arial";
   text-align: center;
   margin-top: 65px;
-    margin-bottom: 26px;
-    display:inline-block;
-    width:100%;
+  margin-bottom: 26px;
+  display: inline-block;
+  width: 100%;
 }
 
 h2#headingWant {
@@ -165,7 +167,7 @@ h2#headingWant {
   text-align: center;
   margin-top: 15px;
   margin-bottom: 22px;
-  width:100%;
+  width: 100%;
 }
 
 h2 {
@@ -175,17 +177,18 @@ h2 {
   text-align: left;
   margin-top: 15px;
   margin-bottom: 22px;
-  width:100%;
+  width: 100%;
 }
 
 h3 {
-  color:#232d4b;
+  color: #232d4b;
   font-size: 24px;
   font-family: "Franklin Gothic Medium", "Franklin Gothic", "Arial";
-  text-align:left;
+  text-align: left;
 }
 
-button#started, button#revise {
+button#started,
+button#revise {
   background: #e57200;
   text-transform: uppercase;
   letter-spacing: .09em;
@@ -202,82 +205,86 @@ button#started, button#revise {
 }
 
 button#started {
-      margin:0;
-      margin-right:20px;
-    
+  margin: 0;
+  margin-right: 20px;
 }
 
 button#revise {
-      margin:0;
+  margin: 0;
 }
 
 div.buttons {
   text-align: center;
-    padding:0;
-    margin-left:5%;
-    margin-right:5%;
-    margin-top: 30px;
+  padding: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 30px;
 }
 
-button:hover {
+button:hover, .prevNext:hover {
   opacity: .6;
 }
 
-#started ~ p#overlayForMe, #revise ~ p#overlayMyself {
-  display:none;
+#started~p#overlayForMe,
+#revise~p#overlayMyself {
+  display: none;
 }
 
-#started:hover ~ p#overlayForMe, #revise:hover ~ p#overlayMyself {
-  display:block;
-    font-size: 20px;
-    padding-top:30px;
-    position:absolute;
-    left:0;
-    right:0;
-    margin:auto;
-    font-family: "Georgia", "sans-serif";
-    color: #838383;
+#started:hover~p#overlayForMe,
+#revise:hover~p#overlayMyself {
+  display: block;
+  font-size: 20px;
+  padding-top: 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-family: "Georgia", "sans-serif";
+  color: #838383;
 }
 
 .hide {
-    display:none;
+  display: none;
 }
 
 p#HPRecP {
-  font-size:18px;
+  font-size: 18px;
   font-family: "Georgia", "sans-serif";
   color: #232d4b;
   padding-top: 20px;
 }
 
-h3#hForMyself, h3#hForMe {
-   display:none;
-   font-size:18px;
-   color:#e57200;
+h3#hForMyself,
+h3#hForMe {
+  display: none;
+  font-size: 18px;
+  color: #e57200;
 }
 
 h3#HPRecHeading {
-   display:block;
-   font-size:18px;
-   color:#e57200;
-   margin-top:32px;
-   margin-bottom:32px;
+  display: block;
+  font-size: 18px;
+  color: #e57200;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
-#day-selection, #time-selection, #concentration-selection {
-  padding:8px;
-  padding-bottom:24px;
+#day-selection,
+#time-selection,
+#concentration-selection {
+  padding: 8px;
+  padding-bottom: 24px;
 }
 
 @media screen and (max-width:700px) {
   button#started {
-    margin-right:0;
+    margin-right: 0;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
   button#revise {
-    margin-top:16px;
+    margin-top: 16px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -285,42 +292,43 @@ h3#HPRecHeading {
   h2#headingWant {
     font-size: 27px;
   }
-  button#started, button#revise {
+  button#started,
+  button#revise {
     font-size: 16px;
   }
   div.buttons {
-    left:0;
-    right:0;
-    margin-left:0;
-    margin-right:0;
+    left: 0;
+    right: 0;
+    margin-left: 0;
+    margin-right: 0;
     min-width: 200px;
-  } 
-  #started ~ p#overlayForMe, #revise ~ p#overlayMyself {
-    display:block;
   }
-  h3#hForMyself, h3#hForMe {
-   display:block;
-   font-size:18px;
-   color:#e57200;
-   margin-top:32px;
-   margin-bottom:32px;
-}
-    h2#headingSchedule {
-        font-size: 27px;
-        margin-top: 22px;
-    }
-
+  #started~p#overlayForMe,
+  #revise~p#overlayMyself {
+    display: block;
+  }
+  h3#hForMyself,
+  h3#hForMe {
+    display: block;
+    font-size: 18px;
+    color: #e57200;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+  h2#headingSchedule {
+    font-size: 27px;
+    margin-top: 22px;
+  }
   p#HPRecP {
-  font-size:16px;
+    font-size: 16px;
+  }
 }
-
-}
-
 
 /* ----- Input css -----*/
 
 /* Customize the label (the container) */
-.containerDay {
+
+.containerLabel {
   display: block;
   position: relative;
   padding-left: 35px;
@@ -334,7 +342,8 @@ h3#HPRecHeading {
 }
 
 /* Hide the browser's default checkbox */
-.containerDay input {
+
+.containerLabel input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -343,6 +352,7 @@ h3#HPRecHeading {
 }
 
 /* Create a custom checkbox */
+
 .checkmark {
   position: absolute;
   top: 0;
@@ -353,16 +363,19 @@ h3#HPRecHeading {
 }
 
 /* On mouse-over, add a grey background color */
-.containerDay:hover input ~ .checkmark {
+
+.containerLabel:hover input~.checkmark {
   background-color: #ccc;
 }
 
 /* When the checkbox is checked, add a blue background */
-.containerDay input:checked ~ .checkmark {
+
+.containerLabel input:checked~.checkmark {
   background-color: #e57200;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
+
 .checkmark:after {
   content: "";
   position: absolute;
@@ -370,12 +383,14 @@ h3#HPRecHeading {
 }
 
 /* Show the checkmark when checked */
-.containerDay input:checked ~ .checkmark:after {
+
+.containerLabel input:checked~.checkmark:after {
   display: block;
 }
 
 /* Style the checkmark/indicator */
-.containerDay .checkmark:after {
+
+.containerLabel .checkmark:after {
   left: 9px;
   top: 5px;
   width: 5px;
@@ -387,26 +402,31 @@ h3#HPRecHeading {
   transform: rotate(45deg);
 }
 
-
-
-
-button.prevNext {
+.prevNext {
   text-transform: uppercase;
   letter-spacing: .09em;
   font-family: "Franklin Gothic Medium", "Franklin Gothic", "Arial";
   font-size: 16px;
   font-weight: 500;
   padding: 10px;
+  text-align:center;
   text-decoration: none;
   display: inline-block;
   min-width: 175px;
   margin-right: 16px;
   margin-bottom: 8px;
+  margin-top: 22px;
   background-color: #FFFFFF;
   border: 1px solid #CCCCCC;
   color: #141E3C;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
-#back-step2 {
-  margin-top: 14px;
+/* Input selection formatting */
+
+.selectOption {
+  background-color: #ffffff;
+  width: 80%;
+  height: 36px;
 }
