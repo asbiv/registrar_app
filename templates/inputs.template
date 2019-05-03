@@ -79,9 +79,7 @@
          <option value="citizenship_country_non-USA">Not United States</option>
        </select>
     </div>
-    <div class="prevNext" onclick="window.location.href='#/step1-when/';">previous page
-    </div>
-    <div class="prevNext" onclick="this.parentElement.classList.add('hide');document.getElementById('bach-degree-form').classList.remove('hide');">next page
+    <div class="prevNext" onclick="this.parentElement.classList.add('hide');document.getElementById('bach-degree-form').classList.remove('hide');document.documentElement.scrollTop = 0;document.body.scrollTop = 0;">next page
     </div>
   </div>
 
@@ -173,9 +171,9 @@
             <span class="checkmark"></span>
         </label>
     </div>
-    <div class="prevNext" onclick="this.parentElement.classList.add('hide');document.getElementById('demographic-selection').classList.remove('hide');">previous page
+    <div class="prevNext" onclick="this.parentElement.classList.add('hide');document.getElementById('demographic-selection').classList.remove('hide');document.documentElement.scrollTop = 0;document.body.scrollTop = 0;">previous page
     </div>
-    <div class="prevNext" onclick="this.parentElement.classList.add('hide');document.getElementById('experience-selection').classList.remove('hide');">next page
+    <div class="prevNext" onclick="this.parentElement.classList.add('hide');document.getElementById('experience-selection').classList.remove('hide');document.documentElement.scrollTop = 0;document.body.scrollTop = 0;">next page
     </div>
   </div>
 
@@ -187,7 +185,7 @@
     </h3>
     <div>
     </div>
-    <div class="prevNext" onclick="this.parentElement.classList.add('hide');document.getElementById('bach-degree-form').classList.remove('hide');">previous page
+    <div class="prevNext" onclick="this.parentElement.classList.add('hide');document.getElementById('bach-degree-form').classList.remove('hide');document.documentElement.scrollTop = 0;document.body.scrollTop = 0;">previous page
     </div>
     <input type='submit' value='NEXT PAGE' class="prevNext" onclick="window.location.href='#/calendar/';">
   </div>
