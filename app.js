@@ -42,9 +42,9 @@
 				context.render('templates/calendar.template', {})
 							 .appendTo(context.$element());
 		});
-		this.get('#/step1-when/', function(context) {
+		this.get('#/inputs/', function(context) {
 				context.app.swap('');
-				context.render('templates/step1-when.template', {})
+				context.render('templates/inputs.template', {})
 							 .appendTo(context.$element());
 		});
 		this.get('#/step2-concentrations/', function(context) {
