@@ -1,11 +1,12 @@
 <h2 id="class-concentrations">Please complete the following</h2>
 
 <form name="algInputs" id="algInputs" action="#/calendar/" method="get">
-<!-- Selections for age, undergrad grad year, masters degree, citizenship  -->
+  <!-- Selections for age, undergrad grad year, masters degree, citizenship  -->
   <div id="demographic-selection">
     <h3>
-      Select your age:
+      Select your age when you started at Darden:
     </h3>
+    <!-- age -->
     <div>
       <select name="ageSelect" class="ageSelect selectOption">
          <option value="">--Select Age--</option>
@@ -35,6 +36,7 @@
     <h3>
       Select the year you completed your bachelor's degree:
     </h3>
+    <!-- udergrad grad year -->
     <div>
       <select name="bachSelect" class="bachSelect selectOption">
          <option value="">--Select Year--</option>
@@ -62,6 +64,7 @@
     <h3>
       Do you have a masters degree:
     </h3>
+    <!-- masters degree -->
     <div>
       <select name="mastSelect" class="mastSelect selectOption">
          <option value="">--Select Yes or No--</option>
@@ -72,6 +75,7 @@
     <h3>
       Select your citizenship:
     </h3>
+    <!-- citizenship -->
     <div style="margin-bottom:12px;">
       <select name="citizenSelect" class="citizenSelect selectOption">
          <option value="">--Select Citizenship--</option>
@@ -79,7 +83,7 @@
          <option value="citizenship_country_non-USA">Not United States</option>
        </select>
     </div>
-    <div class="prevNext" onclick="this.parentElement.classList.add('hide');document.getElementById('bach-degree-form').classList.remove('hide');document.documentElement.scrollTop = 0;document.body.scrollTop = 0;">next page
+    <div class="prevNext" onclick="this.parentElement.classList.add('hide');document.getElementById('bach-degree-form').classList.remove('hide');">next page
     </div>
   </div>
 
@@ -88,105 +92,132 @@
     <h3>
       Select your bachelor's degree:
     </h3>
-
     <div>
-      <label class="containerLabel">Accounting
-            <input type="checkbox" name='bachelors_major_category_Accounting' value='bachelors_major_category_Accounting'>
-            <span class="checkmark"></span>
-        </label>
-      <label class="containerLabel">Business Administration
-            <input type="checkbox" name='bachelors_major_category_Business Administration' value='bachelors_major_category_Business Administration'>
-            <span class="checkmark"></span>
-        </label>
-      <label class="containerLabel">Chemical Engineering
-            <input type="checkbox" name='bachelors_major_category_Chemical Engineering' value='bachelors_major_category_Chemical Engineering'>
-            <span class="checkmark"></span>
-        </label>
-      <label class="containerLabel">Civil Engineering
-            <input type="checkbox" name='bachelors_major_category_Civil Engineering' value='bachelors_major_category_Civil Engineering'>
-            <span class="checkmark"></span>
-        </label>
-      <label class="containerLabel">Computer Science
-            <input type="checkbox" name='bachelors_major_category_Computer Science' value='bachelors_major_category_Computer Science'>
-            <span class="checkmark"></span>
-        </label>
-      <label class="containerLabel">Economics
-            <input type="checkbox" name='bachelors_major_category_Economics' value='bachelors_major_category_Economics'>
-            <span class="checkmark"></span>
-        </label>
-      <label class="containerLabel">Electrical Engineering
-            <input type="checkbox" name='bachelors_major_category_Electrical Engineering' value='bachelors_major_category_Electrical Engineering'>
-            <span class="checkmark"></span>
-        </label>
-      <label class="containerLabel">Engineering
-            <input type="checkbox" name='bachelors_major_category_Engineering' value='bachelors_major_category_Engineering'>
-            <span class="checkmark"></span>
-        </label>
-      <label class="containerLabel">English
-            <input type="checkbox" name='bachelors_major_category_English' value='bachelors_major_category_English'>
-            <span class="checkmark"></span>
-        </label>
-      <label class="containerLabel">Finance
-            <input type="checkbox" name='bachelors_major_category_Finance' value='bachelors_major_category_Finance'>
-            <span class="checkmark"></span>
-        </label>
-      <label class="containerLabel">History
-            <input type="checkbox" name='bachelors_major_category_History' value='bachelors_major_category_History'>
-            <span class="checkmark"></span>
-        </label>
-      <label class="containerLabel">Industrial Engineering
-            <input type="checkbox" name='bachelors_major_category_Industrial Engineering' value='bachelors_major_category_Industrial Engineering'>
-            <span class="checkmark"></span>
-        </label>
-      <label class="containerLabel">International Relations
-            <input type="checkbox" name='bachelors_major_category_International Relations' value='bachelors_major_category_International Relations'>
-            <span class="checkmark"></span>
-        </label>
-      <label class="containerLabel">Law
-            <input type="checkbox" name='bachelors_major_category_Law' value='bachelors_major_category_Law'>
-            <span class="checkmark"></span>
-        </label>
-      <label class="containerLabel">Management
-            <input type="checkbox" name='bachelors_major_category_Management' value='bachelors_major_category_Management'>
-            <span class="checkmark"></span>
-        </label>
-      <label class="containerLabel">Marketing
-            <input type="checkbox" name='bachelors_major_category_Marketing' value='bachelors_major_category_Marketing'>
-            <span class="checkmark"></span>
-        </label>
-      <label class="containerLabel">Mathematics
-            <input type="checkbox" name='bachelors_major_category_Mathematics' value='bachelors_major_category_Mathematics'>
-            <span class="checkmark"></span>
-        </label>
-      <label class="containerLabel">Mechanical Engineering
-            <input type="checkbox" name='bachelors_major_category_Mechanical Engineering' value='bachelors_major_category_Mechanical Engineering'>
-            <span class="checkmark"></span>
-        </label>
-      <label class="containerLabel">Political Science
-            <input type="checkbox" name='bachelors_major_category_Political Science' value='bachelors_major_category_Political Science'>
-            <span class="checkmark"></span>
-        </label>
-      <label class="containerLabel">Other
-            <input type="checkbox" name='bachelors_major_category_Other' value='bachelors_major_category_Other'>
-            <span class="checkmark"></span>
-        </label>
+    <!-- bachelor's -->
+      <table class="table1">
+        <tr>
+          <th><input type="checkbox" name='bachelors_major_category_Accounting' value='bachelors_major_category_Accounting'>Accounting</th>
+          <th><input type="checkbox" name='bachelors_major_category_Business Administration' value='bachelors_major_category_Business Administration'>Business Administration</th>
+        </tr>
+        <tr>
+          <th><input type="checkbox" name='bachelors_major_category_Chemical Engineering' value='bachelors_major_category_Chemical Engineering'>Chemical Engineering</th>
+          <th><input type="checkbox" name='bachelors_major_category_Civil Engineering' value='bachelors_major_category_Civil Engineering'>Civil Engineering</th>
+        </tr>
+        <tr>
+          <th><input type="checkbox" name='bachelors_major_category_Computer Science' value='bachelors_major_category_Computer Science'>Computer Science</th>
+          <th><input type="checkbox" name='bachelors_major_category_Economics' value='bachelors_major_category_Economics'>Economics</th>
+        </tr>
+        <tr>
+          <th><input type="checkbox" name='bachelors_major_category_Electrical Engineering' value='bachelors_major_category_Electrical Engineering'>Electrical Engineering</th>
+          <th><input type="checkbox" name='bachelors_major_category_Engineering' value='bachelors_major_category_Engineering'>Engineering</th>
+        </tr>
+        <tr>
+          <th><input type="checkbox" name='bachelors_major_category_English' value='bachelors_major_category_English'>English</th>
+          <th><input type="checkbox" name='bachelors_major_category_Finance' value='bachelors_major_category_Finance'>Finance</th>
+        </tr>
+        <tr>
+          <th><input type="checkbox" name='bachelors_major_category_History' value='bachelors_major_category_History'>History</th>
+          <th><input type="checkbox" name='bachelors_major_category_Industrial Engineering' value='bachelors_major_category_Industrial Engineering'>Industrial Engineering</th>
+        </tr>
+        <tr>
+          <th><input type="checkbox" name='bachelors_major_category_International Relations' value='bachelors_major_category_International Relations'>International Relations</th>
+          <th><input type="checkbox" name='bachelors_major_category_Law' value='bachelors_major_category_Law'>Law</th>
+        </tr>
+        <tr>
+          <th><input type="checkbox" name='bachelors_major_category_Management' value='bachelors_major_category_Management'>Management</th>
+          <th><input type="checkbox" name='bachelors_major_category_Marketing' value='bachelors_major_category_Marketing'>Marketing</th>
+        </tr>
+        <tr>
+          <th><input type="checkbox" name='bachelors_major_category_Mathematics' value='bachelors_major_category_Mathematics'>Mathematics</th>
+          <th><input type="checkbox" name='bachelors_major_category_Mechanical Engineering' value='bachelors_major_category_Mechanical Engineering'>Mechanical Engineering</th>
+        </tr>
+        <tr>
+          <th><input type="checkbox" name='bachelors_major_category_Political Science' value='bachelors_major_category_Political Science'>Political Science</th>
+          <th><input type="checkbox" name='bachelors_major_category_Other' value='bachelors_major_category_Other'>Other</th>
+        </tr>
+      </table>
     </div>
-    <div class="prevNext" onclick="this.parentElement.classList.add('hide');document.getElementById('demographic-selection').classList.remove('hide');document.documentElement.scrollTop = 0;document.body.scrollTop = 0;">previous page
+    <div class="prevNext" onclick="this.parentElement.classList.add('hide');document.getElementById('demographic-selection').classList.remove('hide');">previous page
     </div>
-    <div class="prevNext" onclick="this.parentElement.classList.add('hide');document.getElementById('experience-selection').classList.remove('hide');document.documentElement.scrollTop = 0;document.body.scrollTop = 0;">next page
+    <div class="prevNext" onclick="this.parentElement.classList.add('hide');document.getElementById('experience-selection').classList.remove('hide');">next page
     </div>
   </div>
 
-  <!-- Selection for industry prior to darden, internship industry, concentrations  -->
-  <!-- Tom to add code in -->
+  <!-- Checkboxes for industry prior to darden, internship industry, concentrations  -->
   <div id="experience-selection" class="hide">
-    <h3>
-      Code needs to be added
-    </h3>
-    <div>
+      <h3>
+        Did you work in any of the following areas prior to Darden?
+      </h3>
+    <!-- industry prior to darden -->
+      <div>
+        <table class="table1">
+          <tr>
+            <th> <input type="checkbox" value="consulting_job" name="consulting_job">Consulting</th>
+            <th> <input type="checkbox" value="finance_job" name="finance_job">Finance</th>
+            <th> <input type="checkbox" value="marketing_job" name="marketing_job">Marketing</th>
+            <th> <input type="checkbox" value="entrepreneurship_job" name="entrepreneurship_job">Entrepreneurship</th></tr>
+          <tr>
+            <th> <input type="checkbox" value="non_profit_job" name="non_profit_job">Non Profit</th>
+            <th> <input type="checkbox" value="tech_job" name="tech_job">Tech</th>
+            <th> <input type="checkbox" value="corporate_job" name="corporate_job">Corporate</th></tr>
+        </table>
+      </div>
+      
+      <h3>
+        Did you intern in any of the following between first and second year?
+      </h3>
+      <!-- darden industry -->
+      <div>
+        <table class="table1">
+          <tr>
+            <th><input type="checkbox" value="consulting_intern" name="consulting_intern">Consulting</th>
+            <th> <input type="checkbox" value="finance_intern" name="finance_intern">Finance</th>
+            <th> <input type="checkbox" value="marketing_intern" name="marketing_intern">Marketing</th>
+            <th> <input type="checkbox" value="entrepreneurship_intern" name="entrepreneurship_intern">Entrepreneurship</th>
+          </tr>
+          <th><input type="checkbox" value="non_profit_intern" name="non_profit_intern">Non Profit</th>
+          <th><input type="checkbox" value="tech_intern" name="tech_intern">Tech</th>
+          <th><input type="checkbox" value="corporate_intern" name="corporate_intern">Corporate</th>
+        </table>
+      </div>
+
+      <h3>
+        Would you like to obtain any of the following Darden concentrations?
+      </h3>
+      <!-- darden concentrations -->
+      <div>
+        <table class="table1">
+          <tr>
+            <th><input type="checkbox" value="asset_management_sales_trading" name="asset_management_sales_trading">Asset Management / Sales and Trading</th>
+            <th><input type="checkbox" value="business_analytics" name="business_analytics">Business Analytics</th>
+          </tr>
+          <tr>
+            <th><input type="checkbox" value="business_development_growth" name="business_development_growth">Business Development and Growth</th>
+            <th><input type="checkbox" value="b2b_marketing" name="b2b_marketing">Business to Business Marketing</th>
+          </tr>
+          <tr>
+            <th><input type="checkbox" value="corporate_finance_investment_banking">Corporate Finance and Investment Banking</th>
+            <th><input type="checkbox" value="corporate_innovation" name="corporate_innovation">Corporate Innovation</th>
+          </tr>
+          <tr>
+            <th><input type="checkbox" value="entrepreneuship">Entrepreneurship</th>
+            <th><input type="checkbox" value="global_business" name="global_business">Global Business</th>
+          </tr>
+          <tr>
+            <th><input type="checkbox" value="innovation_for_sustainability" name="innovation_for_sustainability">Innovation for Sustainability</th>
+            <th><input type="checkbox" value="market_analytics" name="market_analytics">Market Analytics</th>
+          </tr>
+          <tr>
+            <th><input type="checkbox" value="marketing" name="marketing">Marketing</th>
+            <th><input type="checkbox" value="strategy_consulting" name="strategy_consulting">Strategy Consulting</th>
+          </tr>
+          <tr>
+            <th><input type="checkbox" value="supply_chain_management" name="supply_chain_management">Supply Chain Management</th>
+          </tr>
+        </table>
+      </div>
+      <div class="prevNext" onclick="this.parentElement.classList.add('hide');document.getElementById('bach-degree-form').classList.remove('hide');">previous page
+      </div>
+      <input type='submit' value='NEXT PAGE' class="prevNext" onclick="window.location.href='#/calendar/';">
     </div>
-    <div class="prevNext" onclick="this.parentElement.classList.add('hide');document.getElementById('bach-degree-form').classList.remove('hide');document.documentElement.scrollTop = 0;document.body.scrollTop = 0;">previous page
-    </div>
-    <input type='submit' value='NEXT PAGE' class="prevNext" onclick="window.location.href='#/calendar/';">
-  </div>
 </form>

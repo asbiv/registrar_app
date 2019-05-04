@@ -221,7 +221,8 @@ div.buttons {
   margin-top: 30px;
 }
 
-button:hover, .prevNext:hover {
+button:hover,
+.prevNext:hover {
   opacity: .6;
 }
 
@@ -409,7 +410,7 @@ h3#HPRecHeading {
   font-size: 16px;
   font-weight: 500;
   padding: 10px;
-  text-align:center;
+  text-align: center;
   text-decoration: none;
   display: inline-block;
   min-width: 175px;
@@ -425,8 +426,29 @@ h3#HPRecHeading {
 
 /* Input selection formatting */
 
+/* Input selection formatting */
+
 .selectOption {
   background-color: #ffffff;
   width: 80%;
   height: 36px;
+}
+
+.table1 {
+  width: 600px;
+  margin: auto;
+  font-size: 14px;
+}
+
+.table1 th {
+  color: #000;
+  vertical-align: middle;
+  text-align: left;
+}
+
+
+input[type='checkbox'] + label {
+  display: block;
+  width: 30px;
+  white-space: nowrap;
 }
