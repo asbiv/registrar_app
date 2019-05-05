@@ -31,7 +31,7 @@ $(function() {
 function wait(e)
 {
  e.preventDefault();
- document.getElementById('form#algInputs').submit();
+ document.getElementById('algInputs').submit();
  console.log('done!')
  ConvertFormToJSON(jQuery('form#algInputs'));
 }
