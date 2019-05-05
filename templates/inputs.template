@@ -218,6 +218,6 @@
       </div>
       <div class="prevNext" onclick="this.parentElement.classList.add('hide');document.getElementById('bach-degree-form').classList.remove('hide');document.documentElement.scrollTop = 0;document.body.scrollTop = 0;">previous page
       </div>
-      <input type='submit' value='NEXT PAGE' class="prevNext" onclick="window.location.href='#/calendar/';ConvertFormToJSON(jQuery('form#algInputs')">
+      <input type='submit' value='NEXT PAGE' class="prevNext" onclick="window.location.href='#/calendar/';ConvertFormToJSON(jQuery('form#algInputs'))">
     </div>
 </form>
