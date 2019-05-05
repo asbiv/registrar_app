@@ -1,12 +1,12 @@
 function ConvertFormToJSON(form){
     var array = jQuery(form).serializeArray();
-    var json = {};
+    var jsonData = {};
     
     jQuery.each(array, function() {
-        json[this.name] = this.value || '';
+        jsonData[this.name] = this.value || '';
     });
     
-    return json;
+    return jsonData;
 }
 
 jQuery(document).on('ready', function() {
@@ -14,7 +14,7 @@ jQuery(document).on('ready', function() {
         event.preventDefault();
 
         var form = this;
-        var json = ConvertFormToJSON(form);
-        console.log(json);
+        var jsonData = ConvertFormToJSON(form);
+        console.log(jsonData);
          });
 });
