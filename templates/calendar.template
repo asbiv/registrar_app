@@ -19,4 +19,4 @@
 
 </script>
 
-<button id="back-step2" class="prevNext" onclick="window.location.href='#/inputs/';">previous page</button>
+<button id="back-step2" class="prevNext" onclick="window.location.href='#/inputs/';">try again</button>
