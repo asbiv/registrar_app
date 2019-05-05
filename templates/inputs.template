@@ -10,10 +10,10 @@ function ConvertFormToJSON(form){
     return jsonData;
 }
 $(function() { //shorthand document.ready function
-    $('form#algInputs').on('submit', function(e) { //use on if jQuery 1.7+
-        e.preventDefault();  //prevent form from submitting
+    $('form#algInputs').on('submit', function(e) {
+        e.preventDefault();
         var jsonData = ConvertFormToJSON(jQuery('form#algInputs'));
-        console.log(jsonData); //use the console for debugging, F12 in Chrome, not alerts
+        console.log(jsonData);
     });
 });
 </script>
