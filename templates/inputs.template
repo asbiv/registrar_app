@@ -1,3 +1,23 @@
+<script>
+function ConvertFormToJSON(form){
+    var array = jQuery(form).serializeArray();
+    var jsonData = {};
+    
+    jQuery.each(array, function() {
+        jsonData[this.name] = this.value || '';
+    });
+    
+    return jsonData;
+}
+$(function() { //shorthand document.ready function
+    $('form#algInputs').on('submit', function(e) { //use on if jQuery 1.7+
+        e.preventDefault();  //prevent form from submitting
+        var jsonData = ConvertFormToJSON(jQuery('form#algInputs'));
+        console.log(jsonData); //use the console for debugging, F12 in Chrome, not alerts
+    });
+});
+</script>
+
 <h2 id="class-concentrations">Please complete the following</h2>
 
 <form name="algInputs" id="algInputs" action="#/calendar/" method="get">
