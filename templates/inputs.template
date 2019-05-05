@@ -9,7 +9,7 @@ function ConvertFormToJSON(form){
     
     return jsonData;
 }
-$(function() { //shorthand document.ready function
+$(function() {
     $('form#algInputs').on('submit', function(e) {
         e.preventDefault();
         var jsonData = ConvertFormToJSON(jQuery('form#algInputs'));
