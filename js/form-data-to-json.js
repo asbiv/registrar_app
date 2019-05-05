@@ -20,10 +20,18 @@ function ConvertFormToJSON(form){
 });*/
 
 
-$(function() { //shorthand document.ready function
-    $('form#algInputs').on('submit', function(e) { //use on if jQuery 1.7+
-        e.preventDefault();  //prevent form from submitting
+$(function() {
+    $('form#algInputs').on('submit', function(e) {
+        e.preventDefault();
         var jsonData = ConvertFormToJSON(jQuery('form#algInputs'));
-        console.log(jsonData); //use the console for debugging, F12 in Chrome, not alerts
+        console.log(jsonData);
     });
 });
+
+function wait(e)
+{
+ e.preventDefault();
+ document.getElementById('form#algInputs').submit();
+ console.log('done!')
+ ConvertFormToJSON(jQuery('form#algInputs'));
+}
