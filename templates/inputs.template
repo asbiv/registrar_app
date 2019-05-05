@@ -1,6 +1,6 @@
 <h2 id="class-concentrations">Please complete the following</h2>
 
-<form name="algInputs" id="algInputs" action="#/calendar/" method="get">
+<form name="algInputs" id="algInputs" action="#/calendar/" method="post">
   <!-- Selections for age, undergrad grad year, masters degree, citizenship  -->
   <div id="demographic-selection">
     <h3>
@@ -8,7 +8,7 @@
     </h3>
     <!-- age -->
     <div>
-      <select name="ageSelect" class="ageSelect selectOption">
+      <select name="age" class="ageSelect selectOption">
          <option value="">--Select Age--</option>
          <option value="20">20</option>
          <option value="21">21</option>
@@ -38,7 +38,7 @@
     </h3>
     <!-- udergrad grad year -->
     <div>
-      <select name="bachSelect" class="bachSelect selectOption">
+      <select name="bachelors_grad_year" class="bachSelect selectOption">
          <option value="">--Select Year--</option>
          <option value="2000">2000</option>
          <option value="2001">2001</option>
@@ -66,10 +66,10 @@
     </h3>
     <!-- masters degree -->
     <div>
-      <select name="mastSelect" class="mastSelect selectOption">
+      <select name="masters_degree" class="mastSelect selectOption">
          <option value="">--Select Yes or No--</option>
-         <option value="masters_degree_1.0">Yes</option>
-         <option value="masters_degree_0.0">No</option>
+         <option value="Yes">Yes</option>
+         <option value="No">No</option>
        </select>
     </div>
     <h3>
@@ -77,10 +77,10 @@
     </h3>
     <!-- citizenship -->
     <div style="margin-bottom:12px;">
-      <select name="citizenSelect" class="citizenSelect selectOption">
+      <select name="citizenship_country" class="citizenSelect selectOption">
          <option value="">--Select Citizenship--</option>
-         <option value="citizenship_country_USA">United States</option>
-         <option value="citizenship_country_non-USA">Not United States</option>
+         <option value="US">United States</option>
+         <option value="Not-US">Not United States</option>
        </select>
     </div>
     <div class="prevNext" onclick="this.parentElement.classList.add('hide');document.getElementById('bach-degree-form').classList.remove('hide');document.documentElement.scrollTop = 0;document.body.scrollTop = 0;">next page
@@ -96,44 +96,44 @@
     <!-- bachelor's -->
       <table class="table1">
         <tr>
-          <th><input type="checkbox" name='bachelors_major_category_Accounting' value='bachelors_major_category_Accounting'>Accounting</th>
-          <th><input type="checkbox" name='bachelors_major_category_Business Administration' value='bachelors_major_category_Business Administration'>Business Administration</th>
+          <th><input type="checkbox" name='bachelors_major_category_Accounting' value='1'>Accounting</th>
+          <th><input type="checkbox" name='bachelors_major_category_Business_Administration' value='1'>Business Administration</th>
         </tr>
         <tr>
-          <th><input type="checkbox" name='bachelors_major_category_Chemical Engineering' value='bachelors_major_category_Chemical Engineering'>Chemical Engineering</th>
-          <th><input type="checkbox" name='bachelors_major_category_Civil Engineering' value='bachelors_major_category_Civil Engineering'>Civil Engineering</th>
+          <th><input type="checkbox" name='bachelors_major_category_Chemical Engineering' value='1'>Chemical Engineering</th>
+          <th><input type="checkbox" name='bachelors_major_category_Civil Engineering' value='1'>Civil Engineering</th>
         </tr>
         <tr>
-          <th><input type="checkbox" name='bachelors_major_category_Computer Science' value='bachelors_major_category_Computer Science'>Computer Science</th>
-          <th><input type="checkbox" name='bachelors_major_category_Economics' value='bachelors_major_category_Economics'>Economics</th>
+          <th><input type="checkbox" name='bachelors_major_category_Computer Science' value='1'>Computer Science</th>
+          <th><input type="checkbox" name='bachelors_major_category_Economics' value='1'>Economics</th>
         </tr>
         <tr>
-          <th><input type="checkbox" name='bachelors_major_category_Electrical Engineering' value='bachelors_major_category_Electrical Engineering'>Electrical Engineering</th>
-          <th><input type="checkbox" name='bachelors_major_category_Engineering' value='bachelors_major_category_Engineering'>Engineering</th>
+          <th><input type="checkbox" name='bachelors_major_category_Electrical Engineering' value='1'>Electrical Engineering</th>
+          <th><input type="checkbox" name='bachelors_major_category_Engineering' value='1'>Engineering</th>
         </tr>
         <tr>
-          <th><input type="checkbox" name='bachelors_major_category_English' value='bachelors_major_category_English'>English</th>
-          <th><input type="checkbox" name='bachelors_major_category_Finance' value='bachelors_major_category_Finance'>Finance</th>
+          <th><input type="checkbox" name='bachelors_major_category_English' value='1'>English</th>
+          <th><input type="checkbox" name='bachelors_major_category_Finance' value='1'>Finance</th>
         </tr>
         <tr>
-          <th><input type="checkbox" name='bachelors_major_category_History' value='bachelors_major_category_History'>History</th>
-          <th><input type="checkbox" name='bachelors_major_category_Industrial Engineering' value='bachelors_major_category_Industrial Engineering'>Industrial Engineering</th>
+          <th><input type="checkbox" name='bachelors_major_category_History' value='1'>History</th>
+          <th><input type="checkbox" name='bachelors_major_category_Industrial Engineering' value='1'>Industrial Engineering</th>
         </tr>
         <tr>
-          <th><input type="checkbox" name='bachelors_major_category_International Relations' value='bachelors_major_category_International Relations'>International Relations</th>
-          <th><input type="checkbox" name='bachelors_major_category_Law' value='bachelors_major_category_Law'>Law</th>
+          <th><input type="checkbox" name='bachelors_major_category_International Relations' value='1'>International Relations</th>
+          <th><input type="checkbox" name='bachelors_major_category_Law' value='1'>Law</th>
         </tr>
         <tr>
-          <th><input type="checkbox" name='bachelors_major_category_Management' value='bachelors_major_category_Management'>Management</th>
-          <th><input type="checkbox" name='bachelors_major_category_Marketing' value='bachelors_major_category_Marketing'>Marketing</th>
+          <th><input type="checkbox" name='bachelors_major_category_Management' value='1'>Management</th>
+          <th><input type="checkbox" name='bachelors_major_category_Marketing' value='1'>Marketing</th>
         </tr>
         <tr>
-          <th><input type="checkbox" name='bachelors_major_category_Mathematics' value='bachelors_major_category_Mathematics'>Mathematics</th>
-          <th><input type="checkbox" name='bachelors_major_category_Mechanical Engineering' value='bachelors_major_category_Mechanical Engineering'>Mechanical Engineering</th>
+          <th><input type="checkbox" name='bachelors_major_category_Mathematics' value='1'>Mathematics</th>
+          <th><input type="checkbox" name='bachelors_major_category_Mechanical Engineering' value='1'>Mechanical Engineering</th>
         </tr>
         <tr>
-          <th><input type="checkbox" name='bachelors_major_category_Political Science' value='bachelors_major_category_Political Science'>Political Science</th>
-          <th><input type="checkbox" name='bachelors_major_category_Other' value='bachelors_major_category_Other'>Other</th>
+          <th><input type="checkbox" name='bachelors_major_category_Political Science' value='1'>Political Science</th>
+          <th><input type="checkbox" name='bachelors_major_category_Other' value='1'>Other</th>
         </tr>
       </table>
     </div>
@@ -152,14 +152,14 @@
       <div>
         <table class="table1">
           <tr>
-            <th> <input type="checkbox" value="consulting_job" name="consulting_job">Consulting</th>
-            <th> <input type="checkbox" value="finance_job" name="finance_job">Finance</th>
-            <th> <input type="checkbox" value="marketing_job" name="marketing_job">Marketing</th>
-            <th> <input type="checkbox" value="entrepreneurship_job" name="entrepreneurship_job">Entrepreneurship</th></tr>
+            <th> <input type="checkbox" value="1" name="consulting_job">Consulting</th>
+            <th> <input type="checkbox" value="1" name="finance_job">Finance</th>
+            <th> <input type="checkbox" value="1" name="marketing_job">Marketing</th>
+            <th> <input type="checkbox" value="1" name="entrepreneurship_job">Entrepreneurship</th></tr>
           <tr>
-            <th> <input type="checkbox" value="non_profit_job" name="non_profit_job">Non Profit</th>
-            <th> <input type="checkbox" value="tech_job" name="tech_job">Tech</th>
-            <th> <input type="checkbox" value="corporate_job" name="corporate_job">Corporate</th></tr>
+            <th> <input type="checkbox" value="1" name="non_profit_job">Non Profit</th>
+            <th> <input type="checkbox" value="1" name="tech_job">Tech</th>
+            <th> <input type="checkbox" value="1" name="corporate_job">Corporate</th></tr>
         </table>
       </div>
       
@@ -170,14 +170,14 @@
       <div>
         <table class="table1">
           <tr>
-            <th><input type="checkbox" value="consulting_intern" name="consulting_intern">Consulting</th>
-            <th> <input type="checkbox" value="finance_intern" name="finance_intern">Finance</th>
-            <th> <input type="checkbox" value="marketing_intern" name="marketing_intern">Marketing</th>
-            <th> <input type="checkbox" value="entrepreneurship_intern" name="entrepreneurship_intern">Entrepreneurship</th>
+            <th><input type="checkbox" value="1" name="consulting_intern">Consulting</th>
+            <th> <input type="checkbox" value="1" name="finance_intern">Finance</th>
+            <th> <input type="checkbox" value="1" name="marketing_intern">Marketing</th>
+            <th> <input type="checkbox" value="1" name="entrepreneurship_intern">Entrepreneurship</th>
           </tr>
-          <th><input type="checkbox" value="non_profit_intern" name="non_profit_intern">Non Profit</th>
-          <th><input type="checkbox" value="tech_intern" name="tech_intern">Tech</th>
-          <th><input type="checkbox" value="corporate_intern" name="corporate_intern">Corporate</th>
+          <th><input type="checkbox" value="1" name="non_profit_intern">Non Profit</th>
+          <th><input type="checkbox" value="1" name="tech_intern">Tech</th>
+          <th><input type="checkbox" value="1" name="corporate_intern">Corporate</th>
         </table>
       </div>
 
@@ -188,36 +188,36 @@
       <div>
         <table class="table1">
           <tr>
-            <th><input type="checkbox" value="asset_management_sales_trading" name="asset_management_sales_trading">Asset Management / Sales and Trading</th>
-            <th><input type="checkbox" value="business_analytics" name="business_analytics">Business Analytics</th>
+            <th><input type="checkbox" value="1" name="asset_management_sales_trading">Asset Management / Sales and Trading</th>
+            <th><input type="checkbox" value="1" name="business_analytics">Business Analytics</th>
           </tr>
           <tr>
-            <th><input type="checkbox" value="business_development_growth" name="business_development_growth">Business Development and Growth</th>
-            <th><input type="checkbox" value="b2b_marketing" name="b2b_marketing">Business to Business Marketing</th>
+            <th><input type="checkbox" value="1" name="business_development_growth">Business Development and Growth</th>
+            <th><input type="checkbox" value="1" name="b2b_marketing">Business to Business Marketing</th>
           </tr>
           <tr>
-            <th><input type="checkbox" value="corporate_finance_investment_banking">Corporate Finance and Investment Banking</th>
-            <th><input type="checkbox" value="corporate_innovation" name="corporate_innovation">Corporate Innovation</th>
+            <th><input type="checkbox" value="1">Corporate Finance and Investment Banking</th>
+            <th><input type="checkbox" value="1" name="corporate_innovation">Corporate Innovation</th>
           </tr>
           <tr>
-            <th><input type="checkbox" value="entrepreneuship">Entrepreneurship</th>
-            <th><input type="checkbox" value="global_business" name="global_business">Global Business</th>
+            <th><input type="checkbox" value="1">Entrepreneurship</th>
+            <th><input type="checkbox" value="1" name="global_business">Global Business</th>
           </tr>
           <tr>
-            <th><input type="checkbox" value="innovation_for_sustainability" name="innovation_for_sustainability">Innovation for Sustainability</th>
-            <th><input type="checkbox" value="market_analytics" name="market_analytics">Market Analytics</th>
+            <th><input type="checkbox" value="1" name="innovation_for_sustainability">Innovation for Sustainability</th>
+            <th><input type="checkbox" value="1" name="market_analytics">Market Analytics</th>
           </tr>
           <tr>
-            <th><input type="checkbox" value="marketing" name="marketing">Marketing</th>
-            <th><input type="checkbox" value="strategy_consulting" name="strategy_consulting">Strategy Consulting</th>
+            <th><input type="checkbox" value="1" name="marketing">Marketing</th>
+            <th><input type="checkbox" value="1" name="strategy_consulting">Strategy Consulting</th>
           </tr>
           <tr>
-            <th><input type="checkbox" value="supply_chain_management" name="supply_chain_management">Supply Chain Management</th>
+            <th><input type="checkbox" value="1" name="supply_chain_management">Supply Chain Management</th>
           </tr>
         </table>
       </div>
       <div class="prevNext" onclick="this.parentElement.classList.add('hide');document.getElementById('bach-degree-form').classList.remove('hide');document.documentElement.scrollTop = 0;document.body.scrollTop = 0;">previous page
       </div>
-      <input type='submit' value='NEXT PAGE' class="prevNext" onclick="wait(event);">
+      <input type='submit' value='NEXT PAGE' class="prevNext" onclick="returnJSON(event);downloadObjectAsJson('form#algInputs','jsonAlgInputs');">
     </div>
 </form>
