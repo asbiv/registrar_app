@@ -18,5 +18,3 @@ jQuery(document).on('ready', function() {
         console.log(json);
          });
 });
-
-console.log(json)
