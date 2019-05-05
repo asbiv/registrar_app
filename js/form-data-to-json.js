@@ -22,7 +22,7 @@ function ConvertFormToJSON(form){
 
 $(function() { //shorthand document.ready function
     $('form#algInputs').on('submit', function(e) { //use on if jQuery 1.7+
-        e.preventDefault();  //prevent form from submitting
+        /*e.preventDefault();  //prevent form from submitting*/
         var jsonData = ConvertFormToJSON(jQuery('form#algInputs'));
         console.log(jsonData); //use the console for debugging, F12 in Chrome, not alerts
     });
