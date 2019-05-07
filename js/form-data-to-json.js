@@ -5,8 +5,10 @@ function ConvertFormToJSON(form){
     jQuery.each(array, function() {
         jsonData[this.name] = this.value || '';
     });
+
+    ABjsonURL = 'https://registrar-api.herokuapp.com/?query'+'='+JSON.stringify(jsonData);
+    return ABjsonURL;
     
-    return jsonData;
 }
 
 function returnJSON(e)
@@ -27,6 +29,22 @@ function returnJSON(e)
    downloadAnchorNode.click();
    downloadAnchorNode.remove();
   }
+
+
+  $.getJSON('https://registrar-api.herokuapp.com/?query={"age":"27","bachelors_grad_year":"2006","masters_degree":"Yes","citizenship_country":"US","bachelors_major_category_Mechanical Engineering":"1","entrepreneurship_job":"1","entrepreneurship_intern":"1","market_analytics":"1"}', function(jd) {
+console.log(jd.age)
+               });
+
+/*
+    $.ajax({
+    contentType: 'application/json',
+    url:  "https://registrar-api.herokuapp.com/",
+    dataType : 'json',
+    data : jsonData 
+})
+
+  abJSONurl = "https://registrar-api.herokuapp.com/?query="+jsonData
+*/
 
 /*jQuery(document).on('ready', function() {
     jQuery('form#algInputs').bind('submit', function(event){

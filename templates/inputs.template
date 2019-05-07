@@ -1,5 +1,6 @@
 <h2 id="class-concentrations">Please complete the following</h2>
 
+
 <form name="algInputs" id="algInputs" action="#/calendar/" method="post">
   <!-- Selections for age, undergrad grad year, masters degree, citizenship  -->
   <div id="demographic-selection">
@@ -97,7 +98,7 @@
       <table class="table1">
         <tr>
           <th><input type="checkbox" name='bachelors_major_category_Accounting' value='1'>Accounting</th>
-          <th><input type="checkbox" name='bachelors_major_category_Business_Administration' value='1'>Business Administration</th>
+          <th><input type="checkbox" name='bachelors_major_category_Business Administration' value='1'>Business Administration</th>
         </tr>
         <tr>
           <th><input type="checkbox" name='bachelors_major_category_Chemical Engineering' value='1'>Chemical Engineering</th>
@@ -196,11 +197,11 @@
             <th><input type="checkbox" value="1" name="b2b_marketing">Business to Business Marketing</th>
           </tr>
           <tr>
-            <th><input type="checkbox" value="1">Corporate Finance and Investment Banking</th>
+            <th><input type="checkbox" value="1" name="corporate_finance_investment_banking">Corporate Finance and Investment Banking</th>
             <th><input type="checkbox" value="1" name="corporate_innovation">Corporate Innovation</th>
           </tr>
           <tr>
-            <th><input type="checkbox" value="1">Entrepreneurship</th>
+            <th><input type="checkbox" value="1" name="entrepreneurship">Entrepreneurship</th>
             <th><input type="checkbox" value="1" name="global_business">Global Business</th>
           </tr>
           <tr>
@@ -218,6 +219,9 @@
       </div>
       <div class="prevNext" onclick="this.parentElement.classList.add('hide');document.getElementById('bach-degree-form').classList.remove('hide');document.documentElement.scrollTop = 0;document.body.scrollTop = 0;">previous page
       </div>
-      <input type='submit' value='NEXT PAGE' class="prevNext" onclick="returnJSON(event);downloadObjectAsJson('form#algInputs','jsonAlgInputs');">
+      <input type='submit' value='NEXT PAGE' class="prevNext" onclick="window.location.href=returnJSON(event);">
     </div>
 </form>
+
+
+<!--downloadObjectAsJson('form#algInputs','jsonAlgInputs');-->
