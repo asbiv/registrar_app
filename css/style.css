@@ -202,7 +202,8 @@ button#revise,div#started,div#revise {
   min-width: 210px;
   border: none;
   margin-right: 16px;
-  text-align: center
+  text-align: center;
+  cursor: pointer;
 }
 
 button#started {

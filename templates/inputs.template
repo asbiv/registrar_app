@@ -11,7 +11,7 @@
     <!-- age -->
     <div>
       <select name="age" class="ageSelect selectOption">
-         <option value="">--Select Age--</option>
+         <option value="27">--Select Age--</option>
          <option value="20">20</option>
          <option value="21">21</option>
          <option value="22">22</option>
@@ -41,7 +41,7 @@
     <!-- udergrad grad year -->
     <div>
       <select name="bachelors_grad_year" class="bachSelect selectOption">
-         <option value="">--Select Year--</option>
+         <option value="2011">--Select Year--</option>
          <option value="2000">2000</option>
          <option value="2001">2001</option>
          <option value="2002">2002</option>
@@ -69,7 +69,7 @@
     <!-- masters degree -->
     <div>
       <select name="masters_degree" class="mastSelect selectOption">
-         <option value="">--Select Yes or No--</option>
+         <option value="No">--Select Yes or No--</option>
          <option value="Yes">Yes</option>
          <option value="No">No</option>
        </select>
@@ -80,7 +80,7 @@
     <!-- citizenship -->
     <div style="margin-bottom:12px;">
       <select name="citizenship_country" class="citizenSelect selectOption">
-         <option value="">--Select Citizenship--</option>
+         <option value="US">--Select Citizenship--</option>
          <option value="US">United States</option>
          <option value="Not-US">Not United States</option>
        </select>
