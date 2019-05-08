@@ -1,4 +1,5 @@
 <h2 id="class-concentrations">Please complete the following</h2>
+<h2 id="results-heading" class="hide">Your Results</h2>
 
 
 <form name="algInputs" id="algInputs" action="#/calendar/" method="post">
@@ -219,9 +220,21 @@
       </div>
       <div class="prevNext" onclick="this.parentElement.classList.add('hide');document.getElementById('bach-degree-form').classList.remove('hide');document.documentElement.scrollTop = 0;document.body.scrollTop = 0;">previous page
       </div>
-      <input type='submit' value='NEXT PAGE' class="prevNext" onclick="window.location.href=returnJSON(event);">
+      <input type='submit' value='SEE RESULTS' class="prevNext" onclick="event.preventDefault();sendToAlg(event);this.parentElement.classList.add('hide');document.getElementById('finalResults').classList.remove('hide');document.documentElement.scrollTop = 0;document.body.scrollTop = 0;document.getElementById('class-concentrations').classList.add('hide');document.getElementById('results-heading').classList.remove('hide');">
     </div>
 </form>
+
+<div id="finalResults" class="hide">
+  <div id="htmlTable">
+  </div>
+  <div id="loading" class="">
+    <h3>Please wait while we proccess your results</h3>
+    <image src="https://media.giphy.com/media/52qtwCtj9OLTi/giphy.gif">
+  </div>    
+    <div id="revise" class="hide" onclick="location.reload();" style="margin-top:36px">TRY AGAIN
+        </div>
+</div>
+
 
 
 <!--downloadObjectAsJson('form#algInputs','jsonAlgInputs');-->
