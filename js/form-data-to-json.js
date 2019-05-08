@@ -13,7 +13,7 @@ function sendToAlg(form){
         var i;
         for (i = 0; i < data.length; i++) { 
         if (data[i].RegisterClassBinary==1) {
-         tableStart = tableStart+"<tr><td>"+data[i].CourseNumber+"</td>"+"<td>"+data[i].ProbAdjForCredits+"</td>"+"<td>"+data[i].Qtr+"</td>"+"<td>"+data[i].Week+"</td>"+"<td>"+data[i].Time+"</td></tr>";
+         tableStart = tableStart+"<tr><td>"+data[i].CourseNumber+"</td>"+"<td>"+data[i].Title+"</td>"+"<td>"+data[i].Qtr+"</td>"+"<td>"+data[i].Week+"</td>"+"<td>"+data[i].Time+"</td></tr>";
         }
         }
         var tableResults = tableStart+"</table>"
